@@ -12,6 +12,10 @@ fields:
         label: 'jaber.sewing::lang.model.sewingmodel.code'
         span: auto
         type: text
+    description:
+        label: 'jaber.sewing::lang.model.sewingmodel.description'
+        span: auto
+        type: text
     is_active:
         label: 'jaber.sewing::lang.model.sewingmodel.is_active'
         span: auto

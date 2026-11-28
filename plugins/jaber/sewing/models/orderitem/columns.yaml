@@ -2,14 +2,6 @@ columns:
     id:
         label: 'jaber.sewing::lang.model.orderitem.id'
         type: number
-    order:
-        label: 'jaber.sewing::lang.model.orderitem.order'
-        relation: order
-        select: name
-    model:
-        label: 'jaber.sewing::lang.model.orderitem.model'
-        relation: model
-        select: name
     material:
         label: 'jaber.sewing::lang.model.orderitem.material'
         relation: material
@@ -18,10 +10,8 @@ columns:
         label: 'jaber.sewing::lang.model.orderitem.unit'
         relation: unit
         select: name
-    purchase:
+    purchase[FullQualityName]:
         label: 'jaber.sewing::lang.model.orderitem.purchase'
-        relation: purchase
-        select: name
     quantity:
         label: 'jaber.sewing::lang.model.orderitem.quantity'
         type: number

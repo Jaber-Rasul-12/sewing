@@ -14,7 +14,7 @@ class BuilderTableCreateJaberSewingModels extends Migration
             $table->string('name');
             $table->string('code');
             $table->integer('category_id')->unsigned();
-            $table->string('description');
+            $table->string('description')->nullable();
             $table->boolean('is_active');
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();

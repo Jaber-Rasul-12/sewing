@@ -16,7 +16,7 @@ columns:
     due_date:
         label: 'jaber.sewing::lang.model.order.due_date'
         type: text
-    status:
+    status_lists:
         label: 'jaber.sewing::lang.model.order.status'
         type: text
     total:

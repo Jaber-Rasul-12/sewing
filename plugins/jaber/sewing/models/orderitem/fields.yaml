@@ -1,34 +1,38 @@
 fields:
-    order:
-        label: 'jaber.sewing::lang.model.orderitem.order'
-        span: auto
-        type: relation
-        select: name
-        placeholder: 'jaber.sewing::lang.plugin.select'
-    model:
-        label: 'jaber.sewing::lang.model.orderitem.model'
-        span: auto
-        type: relation
-        select: name
-        placeholder: 'jaber.sewing::lang.plugin.select'
+    # model_id:
+    #     label: 'jaber.sewing::lang.model.orderitem.model'
+    #     span: auto
+    #     type: dropdown
+    #     # readOnly: true
     material:
         label: 'jaber.sewing::lang.model.orderitem.material'
         span: auto
         type: relation
         select: name
         placeholder: 'jaber.sewing::lang.plugin.select'
-    unit:
-        label: 'jaber.sewing::lang.model.orderitem.unit'
-        span: auto
-        type: relation
-        select: name
-        placeholder: 'jaber.sewing::lang.plugin.select'
-    purchase:
+    purchase_id:
         label: 'jaber.sewing::lang.model.orderitem.purchase'
         span: auto
-        type: relation
-        select: name
+        type: dropdown
+        dependsOn: material
         placeholder: 'jaber.sewing::lang.plugin.select'
+    unit_id:
+        label: 'jaber.sewing::lang.model.orderitem.unit'
+        span: auto
+        type: dropdown
+        dependsOn: 
+            - material
+            - purchase_id
+        placeholder: 'jaber.sewing::lang.plugin.select'
+    avilable_quantity:
+        label: 'jaber.sewing::lang.model.orderitem.avilable_quantity'
+        span: auto
+        type: number
+        dependsOn: 
+            - material
+            - purchase_id 
+            - unit_id
+        readOnly: true
     quantity:
         label: 'jaber.sewing::lang.model.orderitem.quantity'
         span: auto
@@ -37,10 +41,18 @@ fields:
         label: 'jaber.sewing::lang.model.orderitem.unit_price'
         span: auto
         type: number
+        readOnly: true
+        dependsOn: 
+            - material
+            - purchase_id 
+            - unit_id
     total:
         label: 'jaber.sewing::lang.model.orderitem.total'
         span: auto
         type: number
+        dependsOn: 
+            - quantity
+            - unit_price
     _logbook@update:
             type: jacob_logbook_log
             limitPerPage: 10 

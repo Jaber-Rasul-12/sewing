@@ -7,6 +7,7 @@ use Model;
  * Model
  */
 use Jacob\Logbook\Traits\LogChanges;
+use Ramsey\Uuid\Guid\Guid;
 class Purchase extends Model
 {
     use \Winter\Storm\Database\Traits\Validation;
@@ -33,6 +34,15 @@ class Purchase extends Model
         'uuid'          => 'nullable|string|max:36|unique:jaber_sewing_purchases,uuid',
     ];
 
+      public function getFullQualityNameAttribute()
+  {
+    $this->load('material');
+    $this->load('unit');
+    $this->load('supplier');
+
+    return $this->material->name  . ' - '. $this->unit->name . ' - ' . $this->supplier->name . ' - (' .  $this->quantity . ' ) ( ' . $this->total_price .  ')';
+  }
+
       public $belongsTo = [
         'material' => [
             \Jaber\Sewing\Models\Material::class,
@@ -48,9 +58,50 @@ class Purchase extends Model
         ],
     ];
 
-            public $attachMany = [
+    public $attachMany = [
         'photos' => 'System\Models\File'
     ];
+
+
+     /**
+   * Filter and set options for form fields based on certain conditions.
+   *
+   * @param object $fields   The form fields.
+   * @param mixed  $context  Additional context information if needed.
+   *
+   */
+public function filterFields($fields, $context = null)
+{
+    if (
+        (isset($fields->quantity) && !empty($fields->quantity->value)) &&
+        (isset($fields->unit_price) && !empty($fields->unit_price->value))
+    ) {
+        $fields->total_price->value = $fields->quantity->value * $fields->unit_price->value;
+    } else {
+        $fields->total_price->value = 0;
+    }
+}
+
+  public function getUnitIdOptions()
+  {
+    if ( isset($this->material->id) && !empty($this->material->id)) {
+      return Unit::whereHas('materials',function ($query) {
+          $query->where('material_id', $this->material->id);
+      })->get()->lists('name', 'id');
+    } else {
+      return [];
+    }
+  }
+
+    public function beforeValidate()
+  {
+    if (empty($this->uuid)) {
+      $this->uuid = Guid::uuid4()->toString();
+    }
+  }
+
+  
+
 
     /**
      * @var array Relations

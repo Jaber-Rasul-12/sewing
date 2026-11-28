@@ -1,0 +1,12 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+orderItems:
+    label: 'jaber.sewing::lang.plugin.order_items'
+    view:
+        list: $/jaber/sewing/models/orderitem/columns.yaml
+        toolbarButtons: create|remove
+    manage:
+        list: $/jaber/sewing/models/orderitem/columns.yaml
+        form: $/jaber/sewing/models/orderitem/fields.yaml

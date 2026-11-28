@@ -64,18 +64,18 @@ navigation:
                 icon: icon-users
                 permissions:
                     - customers
-            materials:
-                label: 'jaber.sewing::lang.plugin.materials'
-                url: jaber/sewing/materials
-                icon: icon-cube
-                permissions:
-                    - materials
             units:
                 label: 'jaber.sewing::lang.plugin.units'
                 url: jaber/sewing/units
                 icon: icon-balance-scale
                 permissions:
                     - units
+            materials:
+                label: 'jaber.sewing::lang.plugin.materials'
+                url: jaber/sewing/materials
+                icon: icon-cube
+                permissions:
+                    - materials
             categories:
                 label: 'jaber.sewing::lang.plugin.categories'
                 url: jaber/sewing/categories
@@ -112,11 +112,11 @@ navigation:
                 icon: icon-file-text-o
                 permissions:
                     - orders
-            order_items:
-                label: 'jaber.sewing::lang.plugin.order_items'
-                url: jaber/sewing/orderitems
-                icon: icon-list-ul
-                permissions:
-                    - order_items
+            # order_items:
+            #     label: 'jaber.sewing::lang.plugin.order_items'
+            #     url: jaber/sewing/orderitems
+            #     icon: icon-list-ul
+            #     permissions:
+            #         - order_items
 
 

@@ -16,19 +16,30 @@ fields:
         span: auto
         type: datepicker
         mode: date
+        ignoreTimezone: true
     due_date:
         label: 'jaber.sewing::lang.model.order.due_date'
         span: auto
         type: datepicker
         mode: date
+        ignoreTimezone: true
     status:
         label: 'jaber.sewing::lang.model.order.status'
         span: auto
-        type: text
+        type: dropdown
+        placeholder: 'jaber.sewing::lang.plugin.select'
+        options:
+            ready: 'jaber.sewing::lang.model.order.ready'
+            delivered: 'jaber.sewing::lang.model.order.delivered'
+            cancelled: 'jaber.sewing::lang.model.order.cancelled'
     total:
         label: 'jaber.sewing::lang.model.order.total'
         span: auto
         type: number
+    orderItems:
+        label: 'jaber.sewing::lang.plugin.order_items'
+        type: relationmanager
+        context: ['update', 'preview']
     _logbook@update:
             type: jacob_logbook_log
             limitPerPage: 10 

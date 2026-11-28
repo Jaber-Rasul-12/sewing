@@ -13,6 +13,8 @@ fields:
         label: 'jaber.sewing::lang.model.expense.expense_date'
         span: auto
         type: datepicker
+        mode: date
+        ignoreTimezone: true
     notes:
         label: 'jaber.sewing::lang.model.expense.notes'
         span: auto

@@ -43,6 +43,11 @@ class Order extends Model
         'total'        => 'nullable|numeric|min:0|max:999999999',
     ];
 
+
+    public function getStatusListsAttribute()
+  {
+    return trans('jaber.sewing::lang.model.order.' . $this->attributes['status']);
+  }
     public $hasMany = [
     'orderItems' => [
         \Jaber\Sewing\Models\OrderItem::class,

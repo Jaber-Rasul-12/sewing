@@ -18,8 +18,11 @@ columns:
         label: 'jaber.sewing::lang.model.sewingmodel.description'
         type: text
     is_active:
-        label: 'jaber.sewing::lang.model.sewingmodel.is_active'
-        type: text
+        label: jaber.sewing::lang.model.sewingmodel.is_active
+        type: jaber-list-switch
+        icon: true
+        text-color: true
+        font-size: 20
     created_at:
         label: 'jaber.sewing::lang.model.sewingmodel.created_at'
         type: datetime

@@ -4,25 +4,27 @@ fields:
         span: auto
         type: relation
         placeholder: 'jaber.sewing::lang.plugin.select'
-    unit:
+    unit_id:
         label: 'jaber.sewing::lang.model.purchase.unit'
         span: auto
-        type: relation
+        type: dropdown
+        dependsOn: material
         placeholder: 'jaber.sewing::lang.plugin.select'
     supplier:
         label: 'jaber.sewing::lang.model.purchase.supplier'
         span: auto
         type: relation
         placeholder: 'jaber.sewing::lang.plugin.select'
-    quantity:
-        label: 'jaber.sewing::lang.model.purchase.quantity'
-        span: auto
-        type: number
     purchase_date:
         label: 'jaber.sewing::lang.model.purchase.purchase_date'
         span: auto
         type: datepicker
+        ignoreTimezone: true
         mode: date
+    quantity:
+        label: 'jaber.sewing::lang.model.purchase.quantity'
+        span: auto
+        type: number
     unit_price:
         label: 'jaber.sewing::lang.model.purchase.unit_price'
         span: auto
@@ -30,7 +32,16 @@ fields:
     total_price:
         label: 'jaber.sewing::lang.model.purchase.total_price'
         span: auto
+        dependsOn:
+            - unit_price
+            - quantity
         type: number
+    uuid:
+        label: 'jaber.sewing::lang.model.purchase.uuid'
+        span: auto
+        readOnly: true
+        context: ['update','preview']
+        type: text
     photos:
         label: 'jaber.sewing::lang.model.purchase.photos'
         type: fileupload
@@ -47,12 +58,6 @@ fields:
             sharpen: 0
             interlace: false
             extension: auto
-    uuid:
-        label: 'jaber.sewing::lang.model.purchase.uuid'
-        span: auto
-        readOnly: true
-        context: 'updated|preview'
-        type: text
     _logbook@update:
             type: jacob_logbook_log
             limitPerPage: 10 
