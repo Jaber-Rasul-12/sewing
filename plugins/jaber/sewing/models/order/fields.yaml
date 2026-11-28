@@ -1,0 +1,38 @@
+fields:
+    customer:
+        label: 'jaber.sewing::lang.model.order.customer'
+        span: auto
+        type: relation
+        select: name
+        placeholder: 'jaber.sewing::lang.plugin.select'
+    model:
+        label: 'jaber.sewing::lang.model.order.model'
+        span: auto
+        type: relation
+        select: name
+        placeholder: 'jaber.sewing::lang.plugin.select'
+    order_date:
+        label: 'jaber.sewing::lang.model.order.order_date'
+        span: auto
+        type: datepicker
+        mode: date
+    due_date:
+        label: 'jaber.sewing::lang.model.order.due_date'
+        span: auto
+        type: datepicker
+        mode: date
+    status:
+        label: 'jaber.sewing::lang.model.order.status'
+        span: auto
+        type: text
+    total:
+        label: 'jaber.sewing::lang.model.order.total'
+        span: auto
+        type: number
+    _logbook@update:
+            type: jacob_logbook_log
+            limitPerPage: 10 
+            startPage: 1 
+            permissions: log_changes_sewing
+            showUndoChangesButton: true 
+            refreshFormAfterUndo: true 

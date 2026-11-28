@@ -1,0 +1,122 @@
+plugin:
+    name: 'jaber.sewing::lang.plugin.name'
+    description: 'jaber.sewing::lang.plugin.description'
+    author: jaber
+    replaces: {  }
+permissions:
+    sewing:
+        tab: 'jaber.sewing::lang.plugin.sewing'
+        label: 'jaber.sewing::lang.plugin.sewing'
+
+    customers:
+        tab: 'jaber.sewing::lang.plugin.sewing'
+        label: 'jaber.sewing::lang.plugin.customers'
+    suppliers:
+        tab: 'jaber.sewing::lang.plugin.sewing'
+        label: 'jaber.sewing::lang.plugin.suppliers'
+    units:
+        tab: 'jaber.sewing::lang.plugin.sewing'
+        label: 'jaber.sewing::lang.plugin.units'
+    purchases:
+        tab: 'jaber.sewing::lang.plugin.sewing'
+        label: 'jaber.sewing::lang.plugin.purchases'
+    categories:
+        tab: 'jaber.sewing::lang.plugin.sewing'
+        label: 'jaber.sewing::lang.plugin.categories'
+    orders:
+        tab: 'jaber.sewing::lang.plugin.sewing'
+        label: 'jaber.sewing::lang.plugin.orders'
+    order_items:
+        tab: 'jaber.sewing::lang.plugin.sewing'
+        label: 'jaber.sewing::lang.plugin.order_items'
+    type_expenses:
+        tab: 'jaber.sewing::lang.plugin.sewing'
+        label: 'jaber.sewing::lang.plugin.type_expenses'
+    expenses:
+        tab: 'jaber.sewing::lang.plugin.sewing'
+        label: 'jaber.sewing::lang.plugin.expenses'
+    materials:
+        tab: 'jaber.sewing::lang.plugin.sewing'
+        label: 'jaber.sewing::lang.plugin.materials'
+    sewing_models:
+        tab: 'jaber.sewing::lang.plugin.sewing'
+        label: 'jaber.sewing::lang.plugin.sewing_models'
+    log_changes_sewing:
+        tab: 'jaber.sewing::lang.plugin.sewing'
+        label: 'jaber.sewing::lang.plugin.log_changes_sewing'
+navigation:
+    sewing:
+        label: 'jaber.sewing::lang.plugin.sewing'
+        url: jaber/sewing/materials
+        icon: icon-cut
+        permissions:
+            - sewing
+        sideMenu:
+            suppliers:
+                label: 'jaber.sewing::lang.plugin.suppliers'
+                url: jaber/sewing/suppliers
+                icon: icon-truck
+                permissions:
+                    - suppliers
+            customers:
+                label: 'jaber.sewing::lang.plugin.customers'
+                url: jaber/sewing/customers
+                icon: icon-users
+                permissions:
+                    - customers
+            materials:
+                label: 'jaber.sewing::lang.plugin.materials'
+                url: jaber/sewing/materials
+                icon: icon-cube
+                permissions:
+                    - materials
+            units:
+                label: 'jaber.sewing::lang.plugin.units'
+                url: jaber/sewing/units
+                icon: icon-balance-scale
+                permissions:
+                    - units
+            categories:
+                label: 'jaber.sewing::lang.plugin.categories'
+                url: jaber/sewing/categories
+                icon: icon-tags
+                permissions:
+                    - categories
+            type_expenses:
+                label: 'jaber.sewing::lang.plugin.type_expenses'
+                url: jaber/sewing/typeexpenses
+                icon: icon-folder-o
+                permissions:
+                    - type_expenses
+            expenses:
+                label: 'jaber.sewing::lang.plugin.expenses'
+                url: jaber/sewing/expenses
+                icon: icon-money
+                permissions:
+                    - expenses
+            purchases:
+                label: 'jaber.sewing::lang.plugin.purchases'
+                url: jaber/sewing/purchases
+                icon: icon-shopping-cart
+                permissions:
+                    - purchases
+            sewing_models:
+                label: 'jaber.sewing::lang.plugin.sewing_models'
+                url: jaber/sewing/sewingmodels
+                icon: icon-square
+                permissions:
+                    - sewing_models
+            orders:
+                label: 'jaber.sewing::lang.plugin.orders'
+                url: jaber/sewing/orders
+                icon: icon-file-text-o
+                permissions:
+                    - orders
+            order_items:
+                label: 'jaber.sewing::lang.plugin.order_items'
+                url: jaber/sewing/orderitems
+                icon: icon-list-ul
+                permissions:
+                    - order_items
+
+

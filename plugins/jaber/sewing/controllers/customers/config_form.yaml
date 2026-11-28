@@ -1,0 +1,10 @@
+name: 'jaber.sewing::lang.controller.customers.customers'
+form: $/jaber/sewing/models/customer/fields.yaml
+modelClass: Jaber\Sewing\Models\Customer
+defaultRedirect: jaber/sewing/customers
+create:
+    redirect: 'jaber/sewing/customers/update/:id'
+    redirectClose: jaber/sewing/customers
+update:
+    redirect: jaber/sewing/customers
+    redirectClose: jaber/sewing/customers

@@ -1,0 +1,23 @@
+columns:
+    id:
+        label: 'jaber.sewing::lang.model.expense.id'
+        type: number
+    type_expense:
+        label: 'jaber.sewing::lang.model.expense.type_expense'
+        relation: type_expense
+        select: name
+    amount:
+        label: 'jaber.sewing::lang.model.expense.amount'
+        type: text
+    expense_date:
+        label: 'jaber.sewing::lang.model.expense.expense_date'
+        type: text
+    notes:
+        label: 'jaber.sewing::lang.model.expense.notes'
+        type: text
+    created_at:
+        label: 'jaber.sewing::lang.model.expense.created_at'
+        type: datetime
+    updated_at:
+        label: 'jaber.sewing::lang.model.expense.updated_at'
+        type: datetime

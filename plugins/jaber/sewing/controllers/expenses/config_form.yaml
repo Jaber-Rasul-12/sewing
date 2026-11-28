@@ -1,0 +1,10 @@
+name: 'jaber.sewing::lang.controller.expenses.expenses'
+form: $/jaber/sewing/models/expense/fields.yaml
+modelClass: Jaber\Sewing\Models\Expense
+defaultRedirect: jaber/sewing/expenses
+create:
+    redirect: 'jaber/sewing/expenses/update/:id'
+    redirectClose: jaber/sewing/expenses
+update:
+    redirect: jaber/sewing/expenses
+    redirectClose: jaber/sewing/expenses

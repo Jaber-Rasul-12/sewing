@@ -1,0 +1,14 @@
+columns:
+    id:
+        label: 'jaber.sewing::lang.model.category.id'
+        type: number
+    name:
+        label: 'jaber.sewing::lang.model.category.name'
+        type: text
+        searchable: true
+    created_at:
+        label: 'jaber.sewing::lang.model.category.created_at'
+        type: datetime
+    updated_at:
+        label: 'jaber.sewing::lang.model.category.updated_at'
+        type: datetime

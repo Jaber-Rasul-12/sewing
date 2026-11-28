@@ -1,0 +1,12 @@
+list: $/jaber/sewing/models/sewingmodel/columns.yaml
+modelClass: Jaber\Sewing\Models\SewingModel
+title: 'jaber.sewing::lang.controller.sewingmodels.sewingmodels'
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'jaber/sewing/sewingmodels/update/:id'

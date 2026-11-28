@@ -1,0 +1,10 @@
+name: 'jaber.sewing::lang.controller.suppliers.suppliers'
+form: $/jaber/sewing/models/supplier/fields.yaml
+modelClass: Jaber\Sewing\Models\Supplier
+defaultRedirect: jaber/sewing/suppliers
+create:
+    redirect: 'jaber/sewing/suppliers/update/:id'
+    redirectClose: jaber/sewing/suppliers
+update:
+    redirect: jaber/sewing/suppliers
+    redirectClose: jaber/sewing/suppliers

@@ -1,0 +1,42 @@
+fields:
+    type_expense:
+        label: 'jaber.sewing::lang.model.expense.type_expense'
+        span: auto
+        type: relation
+        select: name
+        placeholder: 'jaber.sewing::lang.plugin.select'
+    amount:
+        label: 'jaber.sewing::lang.model.expense.amount'
+        span: auto
+        type: number
+    expense_date:
+        label: 'jaber.sewing::lang.model.expense.expense_date'
+        span: auto
+        type: datepicker
+    notes:
+        label: 'jaber.sewing::lang.model.expense.notes'
+        span: auto
+        type: text
+    photos:
+        label: 'jaber.sewing::lang.model.expense.photos'
+        type: fileupload
+        span: auto
+        mode: image
+        imageHeight: 260
+        imageWidth: 260
+        thumbOptions:
+            mode: crop
+            offset:
+                - 0
+                - 0
+            quality: 90
+            sharpen: 0
+            interlace: false
+            extension: auto
+    _logbook@update:
+            type: jacob_logbook_log
+            limitPerPage: 10 
+            startPage: 1 
+            permissions: log_changes_sewing
+            showUndoChangesButton: true 
+            refreshFormAfterUndo: true 

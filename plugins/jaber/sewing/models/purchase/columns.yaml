@@ -1,0 +1,37 @@
+columns:
+    id:
+        label: 'jaber.sewing::lang.model.purchase.id'
+        type: number
+    material:
+        label: 'jaber.sewing::lang.model.purchase.material'
+        relation: material
+        select: name
+    unit:
+        label: 'jaber.sewing::lang.model.purchase.unit'
+        relation: unit
+        select: name
+    supplier:
+        label: 'jaber.sewing::lang.model.purchase.supplier'
+        relation: supplier
+        select: name
+    purchase_date:
+        label: 'jaber.sewing::lang.model.purchase.purchase_date'
+        type: text
+    unit_price:
+        label: 'jaber.sewing::lang.model.purchase.unit_price'
+        type: text
+    quantity:
+        label: 'jaber.sewing::lang.model.purchase.quantity'
+        type: text
+    total_price:
+        label: 'jaber.sewing::lang.model.purchase.total_price'
+        type: text
+    uuid:
+        label: 'jaber.sewing::lang.model.purchase.uuid'
+        type: text
+    created_at:
+        label: 'jaber.sewing::lang.model.purchase.created_at'
+        type: datetime
+    updated_at:
+        label: 'jaber.sewing::lang.model.purchase.updated_at'
+        type: datetime

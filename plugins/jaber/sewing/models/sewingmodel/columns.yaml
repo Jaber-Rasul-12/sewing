@@ -1,0 +1,28 @@
+columns:
+    id:
+        label: 'jaber.sewing::lang.model.sewingmodel.id'
+        type: number
+    category:
+        label: 'jaber.sewing::lang.model.sewingmodel.category'
+        relation: category
+        select: name
+    name:
+        label: 'jaber.sewing::lang.model.sewingmodel.name'
+        type: text
+        searchable: true
+    code:
+        label: 'jaber.sewing::lang.model.sewingmodel.code'
+        type: text
+        searchable: true
+    description:
+        label: 'jaber.sewing::lang.model.sewingmodel.description'
+        type: text
+    is_active:
+        label: 'jaber.sewing::lang.model.sewingmodel.is_active'
+        type: text
+    created_at:
+        label: 'jaber.sewing::lang.model.sewingmodel.created_at'
+        type: datetime
+    updated_at:
+        label: 'jaber.sewing::lang.model.sewingmodel.updated_at'
+        type: datetime

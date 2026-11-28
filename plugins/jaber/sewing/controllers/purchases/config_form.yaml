@@ -1,0 +1,10 @@
+name: 'jaber.sewing::lang.controller.purchases.purchases'
+form: $/jaber/sewing/models/purchase/fields.yaml
+modelClass: Jaber\Sewing\Models\Purchase
+defaultRedirect: jaber/sewing/purchases
+create:
+    redirect: 'jaber/sewing/purchases/update/:id'
+    redirectClose: jaber/sewing/purchases
+update:
+    redirect: jaber/sewing/purchases
+    redirectClose: jaber/sewing/purchases

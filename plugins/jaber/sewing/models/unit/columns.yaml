@@ -1,0 +1,17 @@
+columns:
+    id:
+        label: 'jaber.sewing::lang.model.unit.id'
+        type: number
+    name:
+        label: 'jaber.sewing::lang.model.unit.name'
+        type: text
+        searchable: true
+    short_name:
+        label: 'jaber.sewing::lang.model.unit.short_name'
+        type: text
+    created_at:
+        label: 'jaber.sewing::lang.model.unit.created_at'
+        type: datetime
+    updated_at:
+        label: 'jaber.sewing::lang.model.unit.updated_at'
+        type: datetime

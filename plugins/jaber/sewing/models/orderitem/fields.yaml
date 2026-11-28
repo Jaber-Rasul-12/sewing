@@ -1,0 +1,50 @@
+fields:
+    order:
+        label: 'jaber.sewing::lang.model.orderitem.order'
+        span: auto
+        type: relation
+        select: name
+        placeholder: 'jaber.sewing::lang.plugin.select'
+    model:
+        label: 'jaber.sewing::lang.model.orderitem.model'
+        span: auto
+        type: relation
+        select: name
+        placeholder: 'jaber.sewing::lang.plugin.select'
+    material:
+        label: 'jaber.sewing::lang.model.orderitem.material'
+        span: auto
+        type: relation
+        select: name
+        placeholder: 'jaber.sewing::lang.plugin.select'
+    unit:
+        label: 'jaber.sewing::lang.model.orderitem.unit'
+        span: auto
+        type: relation
+        select: name
+        placeholder: 'jaber.sewing::lang.plugin.select'
+    purchase:
+        label: 'jaber.sewing::lang.model.orderitem.purchase'
+        span: auto
+        type: relation
+        select: name
+        placeholder: 'jaber.sewing::lang.plugin.select'
+    quantity:
+        label: 'jaber.sewing::lang.model.orderitem.quantity'
+        span: auto
+        type: number
+    unit_price:
+        label: 'jaber.sewing::lang.model.orderitem.unit_price'
+        span: auto
+        type: number
+    total:
+        label: 'jaber.sewing::lang.model.orderitem.total'
+        span: auto
+        type: number
+    _logbook@update:
+            type: jacob_logbook_log
+            limitPerPage: 10 
+            startPage: 1 
+            permissions: log_changes_sewing
+            showUndoChangesButton: true 
+            refreshFormAfterUndo: true 

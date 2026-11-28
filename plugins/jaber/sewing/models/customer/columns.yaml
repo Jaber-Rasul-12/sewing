@@ -1,0 +1,24 @@
+columns:
+    id:
+        label: 'jaber.sewing::lang.model.customer.id'
+        type: number
+    name:
+        label: 'jaber.sewing::lang.model.customer.name'
+        type: text
+        searchable: true
+    phone:
+        label: 'jaber.sewing::lang.model.customer.phone'
+        type: text
+        searchable: true
+    address:
+        label: 'jaber.sewing::lang.model.customer.address'
+        type: text
+    notes:
+        label: 'jaber.sewing::lang.model.customer.notes'
+        type: text
+    created_at:
+        label: 'jaber.sewing::lang.model.customer.created_at'
+        type: datetime
+    updated_at:
+        label: 'jaber.sewing::lang.model.customer.updated_at'
+        type: datetime

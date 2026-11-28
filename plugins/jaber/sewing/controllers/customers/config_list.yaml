@@ -1,0 +1,12 @@
+list: $/jaber/sewing/models/customer/columns.yaml
+modelClass: Jaber\Sewing\Models\Customer
+title: 'jaber.sewing::lang.controller.customers.customers'
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'jaber/sewing/customers/update/:id'

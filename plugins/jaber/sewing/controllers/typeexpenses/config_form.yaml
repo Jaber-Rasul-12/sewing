@@ -1,0 +1,10 @@
+name: 'jaber.sewing::lang.controller.typeexpenses.typeexpenses'
+form: $/jaber/sewing/models/typeexpense/fields.yaml
+modelClass: Jaber\Sewing\Models\TypeExpense
+defaultRedirect: jaber/sewing/typeexpenses
+create:
+    redirect: 'jaber/sewing/typeexpenses/update/:id'
+    redirectClose: jaber/sewing/typeexpenses
+update:
+    redirect: jaber/sewing/typeexpenses
+    redirectClose: jaber/sewing/typeexpenses

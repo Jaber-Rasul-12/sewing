@@ -1,0 +1,12 @@
+list: $/jaber/sewing/models/material/columns.yaml
+modelClass: Jaber\Sewing\Models\Material
+title: 'jaber.sewing::lang.controller.materials.materials'
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'jaber/sewing/materials/update/:id'

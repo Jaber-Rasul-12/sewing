@@ -1,0 +1,10 @@
+name: 'jaber.sewing::lang.controller.sewingmodels.sewingmodels'
+form: $/jaber/sewing/models/sewingmodel/fields.yaml
+modelClass: Jaber\Sewing\Models\SewingModel
+defaultRedirect: jaber/sewing/sewingmodels
+create:
+    redirect: 'jaber/sewing/sewingmodels/update/:id'
+    redirectClose: jaber/sewing/sewingmodels
+update:
+    redirect: jaber/sewing/sewingmodels
+    redirectClose: jaber/sewing/sewingmodels

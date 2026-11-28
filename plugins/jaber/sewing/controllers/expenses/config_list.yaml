@@ -1,0 +1,12 @@
+list: $/jaber/sewing/models/expense/columns.yaml
+modelClass: Jaber\Sewing\Models\Expense
+title: 'jaber.sewing::lang.controller.expenses.expenses'
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'jaber/sewing/expenses/update/:id'

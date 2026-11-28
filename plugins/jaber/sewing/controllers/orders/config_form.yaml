@@ -1,0 +1,10 @@
+name: 'jaber.sewing::lang.controller.orders.orders'
+form: $/jaber/sewing/models/order/fields.yaml
+modelClass: Jaber\Sewing\Models\Order
+defaultRedirect: jaber/sewing/orders
+create:
+    redirect: 'jaber/sewing/orders/update/:id'
+    redirectClose: jaber/sewing/orders
+update:
+    redirect: jaber/sewing/orders
+    redirectClose: jaber/sewing/orders

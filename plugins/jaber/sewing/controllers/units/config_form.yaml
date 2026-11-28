@@ -1,0 +1,10 @@
+name: 'jaber.sewing::lang.controller.units.units'
+form: $/jaber/sewing/models/unit/fields.yaml
+modelClass: Jaber\Sewing\Models\Unit
+defaultRedirect: jaber/sewing/units
+create:
+    redirect: 'jaber/sewing/units/update/:id'
+    redirectClose: jaber/sewing/units
+update:
+    redirect: jaber/sewing/units
+    redirectClose: jaber/sewing/units

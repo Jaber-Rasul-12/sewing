@@ -1,0 +1,24 @@
+columns:
+    id:
+        label: 'jaber.sewing::lang.model.supplier.id'
+        type: number
+    name:
+        label: 'jaber.sewing::lang.model.supplier.name'
+        type: text
+        searchable: true
+    phone:
+        label: 'jaber.sewing::lang.model.supplier.phone'
+        type: text
+        searchable: true
+    address:
+        label: 'jaber.sewing::lang.model.supplier.address'
+        type: text
+    notes:
+        label: 'jaber.sewing::lang.model.supplier.notes'
+        type: text
+    created_at:
+        label: 'jaber.sewing::lang.model.supplier.created_at'
+        type: datetime
+    updated_at:
+        label: 'jaber.sewing::lang.model.supplier.updated_at'
+        type: datetime

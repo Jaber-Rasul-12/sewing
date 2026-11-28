@@ -1,0 +1,30 @@
+columns:
+    id:
+        label: 'jaber.sewing::lang.model.order.id'
+        type: number
+    customer:
+        label: 'jaber.sewing::lang.model.order.customer'
+        relation: customer
+        select: name
+    model:
+        label: 'jaber.sewing::lang.model.order.model'
+        relation: model
+        select: name
+    order_date:
+        label: 'jaber.sewing::lang.model.order.order_date'
+        type: text
+    due_date:
+        label: 'jaber.sewing::lang.model.order.due_date'
+        type: text
+    status:
+        label: 'jaber.sewing::lang.model.order.status'
+        type: text
+    total:
+        label: 'jaber.sewing::lang.model.order.total'
+        type: number
+    created_at:
+        label: 'jaber.sewing::lang.model.order.created_at'
+        type: datetime
+    updated_at:
+        label: 'jaber.sewing::lang.model.order.updated_at'
+        type: datetime

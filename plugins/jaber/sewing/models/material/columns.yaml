@@ -1,0 +1,22 @@
+columns:
+    id:
+        label: 'jaber.sewing::lang.model.material.id'
+        type: number
+    name:
+        label: 'jaber.sewing::lang.model.material.name'
+        type: number
+        searchable: true
+    supplier:
+        label: 'jaber.sewing::lang.model.material.supplier'
+        relation: supplier
+        select: name
+    units:
+        label: 'jaber.sewing::lang.model.material.units'
+        relation: units
+        select: name
+    created_at:
+        label: 'jaber.sewing::lang.model.material.created_at'
+        type: datetime
+    updated_at:
+        label: 'jaber.sewing::lang.model.material.updated_at'
+        type: datetime

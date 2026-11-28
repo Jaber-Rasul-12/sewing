@@ -1,0 +1,10 @@
+name: 'jaber.sewing::lang.controller.materials.materials'
+form: $/jaber/sewing/models/material/fields.yaml
+modelClass: Jaber\Sewing\Models\Material
+defaultRedirect: jaber/sewing/materials
+create:
+    redirect: 'jaber/sewing/materials/update/:id'
+    redirectClose: jaber/sewing/materials
+update:
+    redirect: jaber/sewing/materials
+    redirectClose: jaber/sewing/materials

@@ -1,0 +1,12 @@
+list: $/jaber/sewing/models/order/columns.yaml
+modelClass: Jaber\Sewing\Models\Order
+title: 'jaber.sewing::lang.controller.orders.orders'
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'jaber/sewing/orders/update/:id'

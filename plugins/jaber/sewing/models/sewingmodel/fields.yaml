@@ -1,0 +1,41 @@
+fields:
+    category:
+        label: 'jaber.sewing::lang.model.sewingmodel.category'
+        span: auto
+        type: relation
+        placeholder: 'jaber.sewing::lang.plugin.select'
+    name:
+        label: 'jaber.sewing::lang.model.sewingmodel.name'
+        span: auto
+        type: text
+    code:
+        label: 'jaber.sewing::lang.model.sewingmodel.code'
+        span: auto
+        type: text
+    is_active:
+        label: 'jaber.sewing::lang.model.sewingmodel.is_active'
+        span: auto
+        type: switch
+    photos:
+        label: 'jaber.sewing::lang.model.sewingmodel.photos'
+        type: fileupload
+        span: auto
+        mode: image
+        imageHeight: 260
+        imageWidth: 260
+        thumbOptions:
+            mode: crop
+            offset:
+                - 0
+                - 0
+            quality: 90
+            sharpen: 0
+            interlace: false
+            extension: auto
+    _logbook@update:
+            type: jacob_logbook_log
+            limitPerPage: 10 
+            startPage: 1 
+            permissions: log_changes_sewing
+            showUndoChangesButton: true 
+            refreshFormAfterUndo: true 

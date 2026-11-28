@@ -1,0 +1,24 @@
+fields:
+    name:
+        label: 'jaber.sewing::lang.model.supplier.name'
+        span: auto
+        type: text
+    phone:
+        label: 'jaber.sewing::lang.model.supplier.phone'
+        span: auto
+        type: text
+    address:
+        label: 'jaber.sewing::lang.model.supplier.address'
+        span: auto
+        type: text
+    notes:
+        label: 'jaber.sewing::lang.model.supplier.notes'
+        span: auto
+        type: text
+    _logbook@update:
+            type: jacob_logbook_log
+            limitPerPage: 10 
+            startPage: 1 
+            permissions: log_changes_sewing
+            showUndoChangesButton: true 
+            refreshFormAfterUndo: true 

@@ -1,0 +1,10 @@
+name: 'jaber.sewing::lang.controller.categories.categories'
+form: $/jaber/sewing/models/category/fields.yaml
+modelClass: Jaber\Sewing\Models\Category
+defaultRedirect: jaber/sewing/categories
+create:
+    redirect: 'jaber/sewing/categories/update/:id'
+    redirectClose: jaber/sewing/categories
+update:
+    redirect: jaber/sewing/categories
+    redirectClose: jaber/sewing/categories

@@ -1,0 +1,14 @@
+columns:
+    id:
+        label: 'jaber.sewing::lang.model.typeexpense.id'
+        type: number
+    name:
+        label: 'jaber.sewing::lang.model.typeexpense.name'
+        type: text
+        searchable: true
+    created_at:
+        label: 'jaber.sewing::lang.model.typeexpense.created_at'
+        type: datetime
+    updated_at:
+        label: 'jaber.sewing::lang.model.typeexpense.updated_at'
+        type: datetime

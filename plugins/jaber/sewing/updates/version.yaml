@@ -1,0 +1,38 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table jaber_sewing_customers'
+    - builder_table_create_jaber_sewing_customers.php
+1.0.3:
+    - 'Created table jaber_sewing_suppliers'
+    - builder_table_create_jaber_sewing_suppliers.php
+1.0.4:
+    - 'Created table jaber_sewing_units'
+    - builder_table_create_jaber_sewing_units.php
+1.0.5:
+    - 'Created table jaber_sewing_materials'
+    - builder_table_create_jaber_sewing_materials.php
+1.0.6:
+    - 'Created table jaber_sewing_units_materials'
+    - builder_table_create_jaber_sewing_units_materials.php
+1.0.7:
+    - 'Created table jaber_sewing_purchases'
+    - builder_table_create_jaber_sewing_purchases.php
+1.0.8:
+    - 'Created table jaber_sewing_categories'
+    - builder_table_create_jaber_sewing_categories.php
+1.0.9:
+    - 'Created table jaber_sewing_models'
+    - builder_table_create_jaber_sewing_models.php
+1.0.10:
+    - 'Created table jaber_sewing_orders'
+    - builder_table_create_jaber_sewing_orders.php
+1.0.11:
+    - 'Created table jaber_sewing_order_items'
+    - builder_table_create_jaber_sewing_order_items.php
+1.0.12:
+    - 'Created table jaber_sewing_type_expenses'
+    - builder_table_create_jaber_sewing_type_expenses.php
+1.0.13:
+    - 'Created table jaber_sewing_expenses'
+    - builder_table_create_jaber_sewing_expenses.php
